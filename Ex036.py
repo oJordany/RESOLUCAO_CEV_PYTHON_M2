@@ -1,0 +1,15 @@
+print('{:=^60}'.format('DESAFIO 036'))
+print('{:=^60}'.format('APROVADOR DE EMPRÉSTIMO'))
+valor = float(input('Insira o valor do empréstimo: R$'))
+salario = float(input('Insira o valor do seu salário mensal: R$'))
+anos = int(input('Insira a quantidade de anos em que você deseja pagar o empréstimo: '))
+prestacao = valor/(anos*12)
+print('='*60)
+if prestacao > salario*(30/100):
+    print('EMPRÉSTIMO NEGADO')
+    print('=' * 60)
+else:
+    print('EMPRÉSTIMO APROVADO')
+    print('=' * 60)
+    print('O valor da prestação mensal do seu empréstimo será de : R${:.2f}'.format(prestacao))
+    print('=' * 60)
